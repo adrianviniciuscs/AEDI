@@ -19,7 +19,7 @@ int main(void) {
   // da matriz criada anteriormente.
   int de = f(m);
   // Imprime o resultado do cálculo da determinante. Neste caso, o resultado
-  // seria -3.
+  // seria -5.
   printf(" Resultado = \t % d ", de);
   return 0;
 }
