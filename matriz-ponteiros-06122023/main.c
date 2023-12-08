@@ -17,12 +17,12 @@ int main(void) {
       A[i][j] = i * 5 + j;
     }
   }
-    for (i = 0; i < n; i++) {
-        for (j = 0; j < n; j++) {
-            printf("%4d ", A[i][j]);
-        }
-        printf("\n");
-    } 
+  for (i = 0; i < n; i++) {
+    for (j = 0; j < n; j++) {
+      printf("%4d ", A[i][j]);
+    }
+    printf("\n");
+  }
 
   return 0;
 }
