@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Struct representando um professor
 
 struct Professor {
   char nome[20];
@@ -34,6 +35,7 @@ void preenche(struct Professor *professor) {
   printf("Insira o email do professor:");
   scanf(" %[^\n]", professor->email);
 }
+
 
 int main() {
   struct Professor *professor = (struct Professor *)malloc(sizeof(struct Professor));
