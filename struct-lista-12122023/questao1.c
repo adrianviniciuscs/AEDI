@@ -47,25 +47,23 @@ void alterarSalario(Funcionario *funcionario, int novoSalario) {
 
 void comparacaoSalarios(int n, Funcionario **funcionarios) {
   int i = 0;
+  int indexMenorSalario;
+  int indexMaiorSalario;
   int menorSalario = funcionarios[0]->salario;
   int maiorSalario = funcionarios[0]->salario;
 
   for (i = 0; i < n; i++) {
     if (funcionarios[i]->salario < menorSalario) {
-      int index = i;
-      printf("Funcionário com o menor salário \n");
-      printf("Nome: %s \n", funcionarios[index]->nome);
-      printf("Cargo: %s \n", funcionarios[index]->cargo);
-      printf("Salario: %d \n", funcionarios[index]->salario);
+      int indexMenorSalario = i;
     }
     if (funcionarios[i]->salario > maiorSalario) {
-      int index = i;
-      printf("Funcionário com o maior salário \n");
-      printf("Nome: %s \n", funcionarios[index]->nome);
-      printf("Cargo: %s \n", funcionarios[index]->cargo);
-      printf("Salario: %d \n", funcionarios[index]->salario);
+      int indexMaiorSalario = i;
     }
   }
+
+  printf("Nome da pessoa com maior salário: %s, R$ %d", funcionarios[indexMaiorSalario]->nome, funcionarios[indexMaiorSalario]->salario);
+  printf("Nome da pessoa com menor salário: %s, R$ %d", funcionarios[indexMenorSalario]->nome, funcionarios[indexMenorSalario]->salario);
+
 }
 
 int main() {

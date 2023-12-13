@@ -32,6 +32,29 @@ void atualizarIdade(Pessoa *pessoa, int novaIdade) {
   pessoa->idade = novaIdade;
 }
 
+void compararIdades(int n, Pessoa **listaPessoas) {
+  int maiorIdade = listaPessoas[0]->idade;
+  int menorIdade = listaPessoas[0]->idade;
+  int indexMaiorIdade;
+  int indexMenorIdade;
+
+  for (int i = 0; i < n; i++) {
+    if (listaPessoas[i]->idade > maiorIdade) {
+      indexMaiorIdade = i;
+    }
+    if (listaPessoas[i]->idade < menorIdade) {
+      indexMenorIdade = i;
+    }
+  }
+
+  printf("Nome da pessoa com maior idade: %s, %d anos",
+         listaPessoas[indexMaiorIdade]->nome,
+         listaPessoas[indexMaiorIdade]->idade);
+  printf("Nome da pessoa com menor idade: %s, %d anos",
+         listaPessoas[indexMenorIdade]->nome,
+         listaPessoas[indexMenorIdade]->idade);
+}
+
 int main() {
   int n;
 
