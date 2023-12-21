@@ -128,3 +128,7 @@ Em seguida, escreva um programa que permita ao usuário cadastrar várias frutas
 
 * Buscar fruta por nome: Solicitar ao usuário que insira o nome de uma fruta. O programa deve buscar no array de structs por todas as frutas com esse nome e imprimir suas informações.
 
+
+
+
+
