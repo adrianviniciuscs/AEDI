@@ -1,0 +1,5 @@
+Nota aluno n0:  10.000000 
+Nota aluno n1:  5.000000 
+Nota aluno n2:  8.000000 
+Nota aluno n3:  7.000000 
+Nota aluno n4:  3.000000 

@@ -11,7 +11,7 @@ float calcularMedia(float nota1, float nota2, float nota3) {
 
 int main(void) {
 
-  FILE *entrada = fopen("entrada_q1.txt", "r");
+  FILE* entrada = fopen("entrada_q1.txt", "r");
   if (entrada == NULL) {
     printf("Nao foi possível abrir o arquivo de entrada.");
   }
@@ -37,7 +37,7 @@ int main(void) {
 
   };
 
-  printf("Arquivo de saída criado com sucesso!");
+  printf("Arquivo de saída criado com sucesso!\n");
   fclose(entrada);
   fclose(saida);
 

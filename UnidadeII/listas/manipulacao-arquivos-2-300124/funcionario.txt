@@ -1,0 +1,3 @@
+Nome do funcionário: 	  Adrian 
+ ID do funcionário: 	 1 
+ Salario do funcionario 	 103103.000000
