@@ -74,7 +74,7 @@ void imprime_menor_maior_preco(int n, struct Ingresso* vet) {
 
         if (vet[i].preco > maior.preco) {
             maior = vet[i];
-        }
+                }
     }
 
     printf("\nEvento de ingresso mais barato:\n");

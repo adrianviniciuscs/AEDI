@@ -30,7 +30,7 @@ const char* obter_tipo_produto_str(enum TipoProduto tipo) {
         default:
             return "DESCONHECIDO";
     }
-}
+};
 
 int main() {
     struct Produto produto;
